@@ -1,0 +1,45 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #25CCF7;
+}
+.form {
+    text-align: center;
+   
+}
+p {
+    text-align: center;
+    width: 600px;
+    display: inline-block;
+    color: black;
+}
+/* JavaScript Tags Style  */
+.NewsItemView {
+    height: 600px;
+    padding: 3px;
+    margin: 5px;
+    background-color: #FFF;
+    overflow: hidden;
+    text-align: center;
+    display: inline-grid;
+    transition: 0.4s all ease-in-out;
+    box-shadow: 2px 2px 4px #999;
+    border-radius: 4px;
+}
+.NewsItemView:hover {
+    box-shadow: 2px 4px 4px #000;
+    background-color: #dcdde1;
+}
+.NewsImg {
+    height: 400px;
+    width: 600px;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 5px 5px 0px 5px;
+}
+ 
+a {
+    display: block;
+    width: 600px;
+}
