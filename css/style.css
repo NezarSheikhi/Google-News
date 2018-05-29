@@ -101,8 +101,7 @@ body {
         margin: 0;
         border-top: 2px dotted #858585;
         border-bottom: 2px dotted #858585;
-        -webkit-transform: rotate(-3deg);
-        -moz-transform: rotate(-3deg);
+
     }
 
     .container:before {
