@@ -51,6 +51,9 @@ p {
 a {
     display: block;
     width: 600px;
+    text-decoration: none;
+    line-height: 25px;
+    padding-top: 10px;
 }
 .language {
     min-width: 240px;
@@ -284,14 +287,15 @@ blockquote + b:first-letter {
         display: grid;
     }
     .NewsItemView {
-        width: 90%;
+        width: 98%;
         margin: 15px auto;
-        height: 600px;
+        height: fit-content;
     }
     .NewsImg {
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
         padding-top: 20px;
+        height: 200px;
     }
     blockquote + b {
         margin-right: 70px;
@@ -305,7 +309,7 @@ blockquote + b:first-letter {
         margin: 0 auto;
     }
     .containt {
-        width: 90%;
+        width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
     }
