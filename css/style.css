@@ -251,7 +251,7 @@ blockquote + b:first-letter {
         margin: 0 auto;
     }
     .containt {
-        width: 90%;
+        width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
     }
