@@ -229,7 +229,7 @@ blockquote + b:first-letter {
         display: grid;
     }
     .NewsItemView {
-        width: 90%;
+        width: 98%;
         margin: 15px auto;
         height: fit-content;
     }
