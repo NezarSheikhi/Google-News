@@ -231,12 +231,13 @@ blockquote + b:first-letter {
     .NewsItemView {
         width: 90%;
         margin: 15px auto;
-        height: 600px;
+        height: fit-content;
     }
     .NewsImg {
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
         padding-top: 20px;
+        height: 200px;
     }
     blockquote + b {
         float: none;
