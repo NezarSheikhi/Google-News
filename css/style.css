@@ -25,7 +25,7 @@ p {
 }
 /* JavaScript Tags Style  */
 .NewsItemView {
-    height: 500px;
+    height: fit-content;
     padding: 3px;
     margin: 5px;
     background-color: #FFF;
