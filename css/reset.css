@@ -1,0 +1,13 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font:1em oswald;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smothing: antialiased !important;
+}

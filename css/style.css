@@ -1,7 +1,17 @@
+@import 'reset.css';
+/* ----------------------- */
 body {
     margin: 0 auto;
     text-align: center;
     background-color: #25CCF7;
+    background: #333;
+    color: #fff;
+}
+.containt {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
 }
 .form {
     text-align: center;
@@ -53,29 +63,114 @@ a {
     margin: 50px auto 50px;
     outline: none;
 }
-body {
-    background: #333;
-    color: #fff;
+
+.container {
+    width: 590px;
+    margin: 140px auto;
+    position: relative;
 }
 
-    .container {
-        width: 590px;
-        margin: 140px auto;
-        position: relative;
-    }
+blockquote {
+    width: 565px;
+    font: 2.65em CallunaRegular;
+    letter-spacing: .075em;
+    float: left;
+    padding: 45px 0 30px 25px;
+    margin: 0;
+    border-top: 2px dotted #858585;
+    border-bottom: 2px dotted #858585;
+}
 
-    blockquote {
-        width: 565px;
-        font: 2.65em CallunaRegular;
-        letter-spacing: .075em;
-        float: left;
-        padding: 45px 0 30px 25px;
-        margin: 0;
-        border-top: 2px dotted #858585;
-        border-bottom: 2px dotted #858585;
+.container:before {
+    content: "“";
+    font-size: 13em;
+    position: absolute;
+    left: -100px;
+    color: #666;
+}
 
-    }
+.container:after {
+    content: "”";
+    font-size: 13em;
+    position: absolute;
+    right: -100px;
+    top: 150px;
+    color: #666;
+}
 
+blockquote:first-line {
+    font: 1.65em "Sketch Block";
+    color: #fff79e;
+}
+
+blockquote:first-letter {
+    font-size: 2.5em;
+    line-height: .52em;
+    position: relative;
+    z-index: 1;
+}
+
+blockquote strong:first-child {
+    margin-left: 8px;
+    letter-spacing: 0;
+}
+
+blockquote strong:last-child {
+    font: 1.3em "Museo 700";
+    letter-spacing: 0;
+}
+
+blockquote em {
+    border-bottom: 2px dotted #858585;
+}
+
+blockquote + b {
+    float: right;
+    margin-top: 10px;
+    font: 1.6em CallunaRegular;
+    letter-spacing: .15em;
+}
+
+blockquote + b:first-letter {
+    color: #fff79e;
+    font-size: 1.3em;
+    font-style: italic;
+    letter-spacing: .25em;
+}
+
+@-moz-document url-prefix() { 
+
+    blockquote:first-letter {
+        margin-top: -29px;
+    }    
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+/* -------- Media Query ------- */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (min-width:800px) and (max-width:1440px){
     .container:before {
         content: "“";
         font-size: 13em;
@@ -83,7 +178,6 @@ body {
         left: -100px;
         color: #666;
     }
-
     .container:after {
         content: "”";
         font-size: 13em;
@@ -92,53 +186,135 @@ body {
         top: 150px;
         color: #666;
     }
+    blockquote {
+        width: 90%;
+    }
+}
+@media (min-width:700px) and (max-width:800px){
+    .container:before {
+        font-size: 5em;
+        left: -10px;
+    }
+    .container:after {
+        font-size: 5em;
+        right: 0px;
+    }
+    blockquote {
+        width: 90%;
+    }
+}
+@media (min-width:500px) and (max-width:700px){
+    .container:before {
+        font-size: 2em;
+        left: 50px;
+    }
+    .container:after {
+        font-size: 2em;
+        right: 70px;
+    }
+    blockquote {
+        width: 90%;
+        font: 0.9em CallunaRegular;
+        border-top: none;
+        border-bottom: none;
+        margin: 0 auto;
+    }
+    .language {
+        min-width: 240px;
+        height: 30px;
+        display: block;
+        margin: 50px auto 50px;
+    }
+    .form{
+        display: grid;
+    }
+    .NewsItemView {
+        width: 90%;
+        margin: 15px auto;
+        height: 600px;
+    }
+    .NewsImg {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    blockquote + b {
+        float: none;
+    }
+    a {
+        width: 80%;
+        margin: 0 auto; 
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .containt {
+        width: 90%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media (min-width:300px) and (max-width:500px){
+    .container:before {
+        font-size: 2em;
+        left: 50px;
+    }
+    .container:after {
+        font-size: 2em;
+        right: 70px;
+    }
+    blockquote {
+        width: 80%;
+        font: 1.2em CallunaRegular;
+        border-top: none;
+        border-bottom: none;
+    }
+    .language {
+        min-width: 240px;
+        height: 30px;
+        display: block;
+        margin: 50px auto 50px;
+    }
+    .form{
+        display: grid;
+    }
+    .NewsItemView {
+        width: 90%;
+        margin: 15px auto;
+        height: 600px;
+    }
+    .NewsImg {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    blockquote + b {
+        margin-right: 70px;
+    }
+    a {
+        width: 80%;
+        margin: 0 auto; 
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .containt {
+        width: 90%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .container {
+        width: 90%;
+    }
+}
 
-        blockquote:first-line {
-            font: 1.65em "Sketch Block";
-            color: #fff79e;
-        }
-
-        blockquote:first-letter {
-            font-size: 2.5em;
-            line-height: .52em;
-            position: relative;
-            z-index: 1;
-        }
-
-        blockquote strong:first-child {
-            margin-left: 8px;
-            letter-spacing: 0;
-        }
-
-        blockquote strong:last-child {
-            font: 1.3em "Museo 700";
-            letter-spacing: 0;
-        }
-
-        blockquote em {
-            border-bottom: 2px dotted #858585;
-        }
-
-        blockquote + b {
-            float: right;
-            margin-top: 10px;
-            font: 1.6em CallunaRegular;
-            letter-spacing: .15em;
-        }
-
-        blockquote + b:first-letter {
-            color: #fff79e;
-            font-size: 1.3em;
-            font-style: italic;
-            letter-spacing: .25em;
-        }
-
-        @-moz-document url-prefix() { 
-
-            blockquote:first-letter {
-                margin-top: -29px;
-            }
-
-        
-        }
-        
+/* @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+} */
