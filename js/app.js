@@ -8,8 +8,7 @@ $(function(){
     
     // Get Api
     function getRequest(input){
-        var url = 'https://newsapi.org/v2/top-headlines?' +
-                  'country='+ input + '&category='+ business + '&apiKey='+ f72d71564c7f4912a4e8962f0dcac996
+        var url = 'https://newsapi.org/v2/top-headlines?'+'country='+ input + '&category='+ business + '&apiKey='+ f72d71564c7f4912a4e8962f0dcac996
     // Get Json data 
         $.getJSON(url, function(response){
             $('#results').html('');
