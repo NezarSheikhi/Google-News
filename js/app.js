@@ -11,7 +11,7 @@ $(function(){
         var url = 'https://newsapi.org/v2/top-headlines?' +
                   'country='+input 
         var rules = {
-            apiKey: 'e95c6a508836438093637a6b3af04bae',
+            apiKey: 'f72d71564c7f4912a4e8962f0dcac996',
             s: input,
             r: 'json'
         };
